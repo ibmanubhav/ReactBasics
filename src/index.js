@@ -1,17 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+
+// class Bike extends React.Component{
+
+//   constructor(){
+//     super();
+//     this.state = {speed:"100kmph"};
+//   }
+//   render(){
+//   return <h1>This is Bike {this.state.speed}</h1>;
+//   }
+// }
+
+// class Car extends React.Component{
+//   constructor(){
+//     super();
+//     this.state = { colour: "BLUE" };
+//   }
+//   render(){
+//   return <p>I AM {this.state.colour} CAR</p>
+//   }
+// }
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { a: "Hurray" };
+  }
+  render() {
+    for (var i = 0; i < 10; i++) {
+      return <p> {this.state.a}</p>
+    }
+  }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+  <App />, document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
